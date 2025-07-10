@@ -1,0 +1,57 @@
+@import url("../styles/variables.css");
+
+.info-seccion {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--color-texto);
+  position: relative;
+}
+
+.info-contenido {
+  max-width: 700px;
+  margin: auto;
+  color: var(--color-texto);
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.info-icono {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--color-texto);
+}
+
+.info-titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.info-subtitulo {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.info-descripcion {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.info-boton {
+  padding: 12px 30px;
+  background-color: var(--color-terracota);
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.info-boton:hover {
+  background-color: var(--color-salmon);
+}

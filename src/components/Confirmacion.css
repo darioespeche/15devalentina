@@ -1,0 +1,37 @@
+@import url("../styles/variables.css");
+.confirmacion-container {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--color-texto);
+  font-size: 1.2rem;
+}
+
+.confirmacion-icon {
+  font-size: 3rem;
+  color: var(--color-terracota);
+  margin-bottom: 20px;
+}
+
+.confirmacion-titulo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  color: var(--color-texto);
+}
+
+.boton-confirmar {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 40px;
+  background-color: var(--color-terracota);
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.boton-confirmar:hover {
+  background-color: var(--color-salmon);
+}

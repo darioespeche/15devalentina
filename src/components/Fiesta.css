@@ -1,0 +1,37 @@
+@import url("../styles/variables.css");
+.fiesta-container {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--color-texto);
+  font-size: 1.2rem;
+}
+
+.fiesta-icon {
+  font-size: 4.3rem;
+  color: var(--color-terracota);
+  margin-bottom: 20px;
+}
+
+.fiesta-titulo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: var(--color-texto);
+}
+
+.boton-maps {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 40px;
+  background-color: var(--color-terracota);
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.boton-maps:hover {
+  background-color: var(--color-salmon);
+}
