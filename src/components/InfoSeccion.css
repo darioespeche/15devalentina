@@ -55,3 +55,35 @@
 .info-boton:hover {
   background-color: var(--color-salmon);
 }
+
+@media (max-width: 600px) {
+  .info-seccion {
+    padding: 40px 15px;
+  }
+
+  .info-contenido {
+    padding: 20px;
+  }
+
+  .info-icono {
+    font-size: 2.5rem;
+  }
+
+  .info-titulo {
+    font-size: 1.8rem;
+  }
+
+  .info-subtitulo {
+    font-size: 1.1rem;
+  }
+
+  .info-descripcion {
+    font-size: 0.9rem;
+  }
+
+  .info-boton {
+    width: 90%;
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}

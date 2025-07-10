@@ -35,3 +35,27 @@
 .boton-maps:hover {
   background-color: var(--color-salmon);
 }
+
+@media (max-width: 600px) {
+  .boton-maps,
+  .boton-confirmar {
+    width: 90%;
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+.fiesta-icon {
+  font-size: 3.5rem;
+}
+
+.fiesta-titulo {
+  font-size: 1.5rem;
+}
+.fiesta-container {
+  padding: 20px;
+  font-size: 1rem;
+}
+.boton-maps {
+  padding: 10px 30px;
+  font-size: 1rem;
+}

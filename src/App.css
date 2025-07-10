@@ -36,3 +36,17 @@ h2 {
 section {
   margin-top: 20px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+}

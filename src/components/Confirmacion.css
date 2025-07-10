@@ -35,3 +35,24 @@
 .boton-confirmar:hover {
   background-color: var(--color-salmon);
 }
+
+@media (max-width: 600px) {
+  .confirmacion-container {
+    font-size: 1rem;
+    padding: 20px;
+  }
+
+  .confirmacion-icon {
+    font-size: 2.5rem;
+  }
+
+  .confirmacion-titulo {
+    font-size: 1.5rem;
+  }
+
+  .boton-confirmar {
+    width: 90%;
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
