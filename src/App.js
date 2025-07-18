@@ -15,11 +15,21 @@ function App() {
   return (
     <>
       <HeroSection />
+      <div className="linea-separadora"></div>
+      <div className="linea-separadora"></div>
       <MusicPlayer />
       <Countdown fecha="2025-08-23T22:00:00" />
+      <div className="linea-separadora"></div>
+      <div className="linea-separadora"></div>
       <Fiesta />
+      <div className="linea-separadora"></div>
+      <div className="linea-separadora"></div>
       <Confirmacion />
+      <div className="linea-separadora"></div>
+      <div className="linea-separadora"></div>
       <Mensajes />
+      <div className="linea-separadora"></div>
+      <div className="linea-separadora"></div>
       <InfoSeccion
         fondo="var(--color-mostaza)"
         icono={<GiClothes />}
@@ -27,6 +37,8 @@ function App() {
         subtitulo="Formal-Elegante"
         descripcion="No usar tonos en celeste o azul"
       />
+      <div className="linea-separadora"></div>
+      <div className="linea-separadora"></div>
       <InfoSeccion
         fondoImagen={fondoFiesta}
         icono={<FaInstagram />}
@@ -35,7 +47,8 @@ function App() {
         textoBoton="VER INSTAGRAM"
         linkBoton="https://www.instagram.com/valefest.xv/"
       />
-
+      <div className="linea-separadora"></div>
+      <div className="linea-separadora"></div>
       <Regalo />
     </>
   );

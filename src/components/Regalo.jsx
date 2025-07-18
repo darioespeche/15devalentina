@@ -34,7 +34,8 @@ export default function Regalo() {
           </div>
         </div>
       )}
-
+      <div className="linea-separadora"></div>
+      <div className="linea-separadora"></div>
       <footer className="footer-final">
         ¡Gracias por acompañarme en este momento tan importante!
       </footer>
