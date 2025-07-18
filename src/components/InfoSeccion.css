@@ -2,88 +2,82 @@
 
 .info-seccion {
   text-align: center;
-  padding: 60px 20px;
+  padding: 40px 20px;
   color: var(--color-texto);
-  position: relative;
+  margin-bottom: 60px;
 }
 
 .info-contenido {
   max-width: 700px;
   margin: auto;
   color: var(--color-texto);
-  padding: 30px;
-  border-radius: 12px;
 }
 
+/* Icono adaptable */
 .info-icono {
-  font-size: 3rem;
+  font-size: 4.5rem;
+  margin-bottom: 20px;
+  color: var(--color-azul);
+  transition: font-size 0.3s ease;
+}
+
+/* Título */
+.info-contenido h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
   margin-bottom: 20px;
   color: var(--color-texto);
 }
 
-.info-titulo {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-  letter-spacing: 1px;
-  color: white;
-}
-
-.info-subtitulo {
-  font-size: 1.2rem;
-  margin-bottom: 15px;
-  color: white;
-}
-
+/* Subtítulo y descripción */
+.info-subtitulo,
 .info-descripcion {
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin-bottom: 20px;
-  color: white;
+  color: var(--color-texto);
 }
 
+/* Botón */
 .info-boton {
-  padding: 12px 30px;
-  background-color: var(--color-terracota);
+  display: inline-block;
+  margin-top: 20px;
+  padding: 16px 48px;
+  background-color: var(--color-azul);
   color: white;
   font-weight: bold;
-  border-radius: 25px;
+  font-size: 1.5rem;
+  border-radius: 30px;
   text-decoration: none;
-  transition: background-color 0.3s ease;
-  display: inline-block;
+  transition: 0.3s ease;
 }
 
 .info-boton:hover {
-  background-color: var(--color-salmon);
+  background-color: var(--color-celeste);
+  color: black;
 }
 
+/* Responsive */
 @media (max-width: 600px) {
   .info-seccion {
-    padding: 40px 15px;
+    margin-bottom: 30px;
   }
-
-  .info-contenido {
-    padding: 20px;
-  }
-
   .info-icono {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
-  .info-titulo {
-    font-size: 1.8rem;
+  .info-contenido h2 {
+    font-size: 2rem;
   }
 
-  .info-subtitulo {
-    font-size: 1.1rem;
-  }
-
+  .info-subtitulo,
   .info-descripcion {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .info-boton {
     width: 90%;
-    font-size: 0.9rem;
-    padding: 10px;
+    font-size: 1rem;
+    padding: 12px;
   }
 }

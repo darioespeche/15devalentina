@@ -1,32 +1,53 @@
 @import url("../styles/variables.css");
+
 .regalo-seccion {
-  background-color: var(--color-mostaza);
   text-align: center;
-  padding: 60px 20px;
+  padding: 40px 20px;
   color: var(--color-texto);
+  margin-bottom: 60px;
 }
 
 .regalo-icono {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   margin-bottom: 20px;
+  color: var(--color-azul);
 }
 
+/* Título y texto */
+.regalo-seccion h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: var(--color-texto);
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.regalo-seccion p {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+/* Botón */
 .boton-regalo {
   margin-top: 20px;
-  padding: 12px 30px;
-  background-color: var(--color-terracota);
+  padding: 16px 48px;
+  background-color: var(--color-azul);
   color: white;
   font-weight: bold;
+  font-size: 1.5rem;
   border: none;
   border-radius: 30px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .boton-regalo:hover {
-  background-color: var(--color-salmon);
+  background-color: var(--color-celeste);
+  color: black;
 }
 
+/* Modal */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -43,11 +64,21 @@
 .modal-contenido {
   background-color: white;
   padding: 30px;
-  border-radius: 12px;
+  border-radius: 20px;
   max-width: 400px;
   width: 90%;
   text-align: center;
   position: relative;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.modal-contenido h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: var(--color-azul);
 }
 
 .modal-cerrar {
@@ -56,14 +87,54 @@
   right: 15px;
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
   cursor: pointer;
+  color: #333;
 }
 
+/* Footer */
 .footer-final {
-  background-color: var(--color-terracota);
   text-align: center;
-  padding: 20px;
-  color: white;
+  padding: 30px 20px;
+  font-size: 1.8rem;
   font-weight: 500;
+  color: var(--color-texto);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .regalo-seccion {
+    margin-bottom: 30px;
+  }
+  .regalo-icono {
+    font-size: 2.2rem;
+  }
+
+  .regalo-seccion h2 {
+    font-size: 2rem;
+  }
+
+  .regalo-seccion p {
+    font-size: 1.1rem;
+  }
+
+  .boton-regalo {
+    width: 90%;
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .modal-contenido {
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  .modal-contenido h2 {
+    font-size: 1.5rem;
+  }
+
+  .footer-final {
+    font-size: 1rem;
+  }
 }

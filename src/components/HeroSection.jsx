@@ -1,14 +1,23 @@
 import React from "react";
 import "./HeroSection.css";
-import fondo from "../assets/foto4.jpg"; // reemplazá con tu imagen
+import videoFondo from "../assets/video15.mp4";
 
 export default function HeroSection() {
   return (
-    <div className="hero" style={{ backgroundImage: `url(${fondo})` }}>
-      <div className="overlay">
+    <section className="hero-video-container">
+      <video
+        className="video-background"
+        src={videoFondo}
+        autoPlay
+        loop
+        muted
+        playsInline
+      />
+      <div className="overlay-content">
         <h1>VALENTINA</h1>
-        <p>MIS QUINCE AÑOS</p>
+        <p>MIS XV AÑOS</p>
+        <div className="scroll-indicator">↓</div>
       </div>
-    </div>
+    </section>
   );
 }

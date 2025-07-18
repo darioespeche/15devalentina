@@ -1,16 +1,16 @@
 import React from "react";
 import "./Confirmacion.css";
-import { MdHowToReg } from "react-icons/md"; // ícono opcional
+import { MdHowToReg } from "react-icons/md";
 
 export default function Confirmacion() {
   return (
     <section className="confirmacion-container">
       <MdHowToReg className="confirmacion-icon" />
-      <h2 className="confirmacion-titulo">CONFIRMACIÓN DE ASISTENCIA</h2>
+      <h2>CONFIRMACIÓN DE ASISTENCIA</h2>
       <p>
-        Cuento con tu presencia.
+        ¡Contamos con tu presencia!
         <br />
-        ¡Confirmá tu asistencia!
+        Confirmá tu asistencia haciendo clic abajo:
       </p>
 
       <a

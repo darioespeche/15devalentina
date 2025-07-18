@@ -1,14 +1,11 @@
 :root {
   /* Colores cálidos */
-  --color-arena: #f7efe5;
+  --color-celeste: #2affff;
   --color-durazno: #fbd4b4;
   --color-salmon: #f4a896;
   --color-terracota: #e28f83;
   --color-mostaza: #f6dfba;
-  --color-salvia: #cfdcb9;
-  --color-texto: #6e605c;
+  --color-azul: #001658;
+  --color-texto: #140f07;
   --color-blanco: #ffffff;
-
-  /* Tipografía */
-  --font-principal: "Poppins", sans-serif;
 }

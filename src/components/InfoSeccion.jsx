@@ -2,8 +2,6 @@ import React from "react";
 import "./InfoSeccion.css";
 
 export default function InfoSeccion({
-  fondo = "#f0f0f0",
-  fondoImagen,
   icono,
   titulo,
   subtitulo,
@@ -12,18 +10,10 @@ export default function InfoSeccion({
   linkBoton,
 }) {
   return (
-    <section
-      className="info-seccion"
-      style={{
-        backgroundColor: fondo,
-        backgroundImage: fondoImagen ? `url(${fondoImagen})` : "none",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+    <section className="info-seccion">
       <div className="info-contenido">
         {icono && <div className="info-icono">{icono}</div>}
-        <h2 className="info-titulo">{titulo}</h2>
+        <h2>{titulo}</h2>
         {subtitulo && <p className="info-subtitulo">{subtitulo}</p>}
         {descripcion && <p className="info-descripcion">{descripcion}</p>}
         {textoBoton && linkBoton && (

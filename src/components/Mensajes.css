@@ -1,0 +1,76 @@
+@import url("../styles/variables.css");
+
+.mensajes-container {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--color-texto);
+  margin-bottom: 60px;
+}
+
+/* Ícono adaptable */
+.mensajes-icon {
+  font-size: 4.5rem;
+  color: var(--color-azul);
+  margin-bottom: 20px;
+  transition: font-size 0.3s ease;
+}
+
+/* Título */
+.mensajes-container h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: var(--color-texto);
+}
+
+/* Texto */
+.mensajes-container p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  color: var(--color-texto);
+}
+
+/* Botón */
+.boton-mensaje {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 16px 48px;
+  background-color: var(--color-azul);
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.boton-mensaje:hover {
+  background-color: var(--color-celeste);
+  color: black;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .mensajes-container {
+    margin-bottom: 30px;
+  }
+  .mensajes-icon {
+    font-size: 2.2rem;
+  }
+
+  .mensajes-container h2 {
+    font-size: 2rem;
+  }
+
+  .mensajes-container p {
+    font-size: 1.1rem;
+  }
+
+  .boton-mensaje {
+    width: 90%;
+    font-size: 1rem;
+    padding: 12px;
+  }
+}

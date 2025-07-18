@@ -2,20 +2,35 @@
 
 .countdown-container {
   text-align: center;
-  margin: 0;
-  font-size: 1.5rem;
-  background-color: var(--color-mostaza);
+  padding: 60px 20px;
   color: var(--color-texto);
-  padding: 50px 20px;
-  border-top: 6px solid var(--color-arena);
-  border-bottom: 6px solid var(--color-arena);
   width: 100%;
 }
 
-.countdown-container h2 {
-  color: var(--color-texto);
-  font-size: 3.2rem;
+.countdown-icon {
+  font-size: 3.5rem;
+  color: var(--color-azul);
   margin-bottom: 20px;
+}
+
+.countdown-titulo {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: var(--color-texto);
+  font-weight: 500;
+}
+
+.countdown-subtitulo {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: var(--color-texto);
+}
+
+.countdown-tiempo h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .llego-msg {
@@ -47,17 +62,48 @@
     transform: translateY(0);
   }
 }
+
 @media (max-width: 600px) {
-  .countdown-container {
-    font-size: 1.1rem;
-    padding: 20px;
+  .countdown-icon {
+    font-size: 2.5rem;
   }
 
-  .countdown-container h2 {
-    font-size: 1.5rem;
+  .countdown-titulo {
+    font-size: 1.4rem;
+  }
+
+  .countdown-subtitulo {
+    font-size: 1.6rem;
+  }
+
+  .countdown-tiempo h3 {
+    font-size: 1.4rem;
   }
 
   .llego-msg {
     font-size: 1.5rem;
+  }
+}
+.modal-cerrar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

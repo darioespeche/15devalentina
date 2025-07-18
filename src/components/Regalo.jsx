@@ -12,12 +12,8 @@ export default function Regalo() {
     <>
       <section className="regalo-seccion">
         <FaGift className="regalo-icono" />
-        <p>
-          El mejor regalo es que vengas,
-          <br />
-          pero si deseás regalarme algo, podés colaborar con mis sueños y
-          anhelos ✨
-        </p>
+        <h2>REGALOS</h2>
+        <p>El mejor regalo es tu presencia, pero si querés...</p>
         <button className="boton-regalo" onClick={abrirModal}>
           HACER UN REGALO
         </button>
@@ -29,22 +25,7 @@ export default function Regalo() {
             <button className="modal-cerrar" onClick={cerrarModal}>
               ×
             </button>
-            <h3>Datos Bancarios</h3>
-            <p>
-              Nombre del Titular: <strong>Valentina Garrido</strong>
-            </p>
-            <p>
-              CBU: <strong>12345623561</strong>
-            </p>
-            <p>
-              Alias: <strong>valen.quince</strong>
-            </p>
-            <p>
-              DNI: <strong>32200552</strong>
-            </p>
-            <p>Banco Galicia</p>
-            <br />
-            <h4>Buzón de regalos</h4>
+            <h2>¡Gracias por tu cariño! 🎁</h2>
             <p>
               Si deseás hacer tu regalo personalmente,
               <br />

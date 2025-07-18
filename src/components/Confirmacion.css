@@ -1,53 +1,71 @@
 @import url("../styles/variables.css");
+
 .confirmacion-container {
   text-align: center;
-  padding: 40px 20px;
+  padding: 60px 40px;
   color: var(--color-texto);
-  font-size: 1.2rem;
+  margin-bottom: 60px;
 }
 
+/* Ícono responsivo */
 .confirmacion-icon {
-  font-size: 3rem;
-  color: var(--color-terracota);
+  font-size: 4.5rem;
+  color: var(--color-azul);
   margin-bottom: 20px;
+  transition: font-size 0.3s ease;
 }
 
-.confirmacion-titulo {
-  font-size: 1.8rem;
+/* Título */
+.confirmacion-container h2 {
+  font-size: 2.8rem;
   font-weight: bold;
   letter-spacing: 2px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   color: var(--color-texto);
 }
 
+/* Texto */
+.confirmacion-container p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  color: var(--color-texto);
+}
+
+/* Botón */
 .boton-confirmar {
   display: inline-block;
   margin-top: 20px;
-  padding: 14px 40px;
-  background-color: var(--color-terracota);
+  padding: 16px 48px;
+  background-color: var(--color-azul);
   color: white;
   font-weight: bold;
+  font-size: 1.5rem;
   border-radius: 30px;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .boton-confirmar:hover {
-  background-color: var(--color-salmon);
+  background-color: var(--color-celeste);
+  color: black;
 }
 
+/* Mobile */
 @media (max-width: 600px) {
   .confirmacion-container {
-    font-size: 1rem;
-    padding: 20px;
+    margin-bottom: 30px;
   }
-
   .confirmacion-icon {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
-  .confirmacion-titulo {
-    font-size: 1.5rem;
+  .confirmacion-container h2 {
+    font-size: 2rem;
+  }
+
+  .confirmacion-container p {
+    font-size: 1.1rem;
   }
 
   .boton-confirmar {
