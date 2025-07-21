@@ -3,15 +3,23 @@ import { FaPlay, FaPause } from "react-icons/fa";
 import "./MusicPlayer.css";
 
 export default function MusicPlayer() {
+  const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef(new Audio("/musica.mp3"));
 
   const togglePlay = () => {
-    const audio = audioRef.current;
+    if (!audioRef.current) {
+      audioRef.current = new Audio("/musica.mp3");
+      audioRef.current.loop = true; // opcional
+    }
+
     if (isPlaying) {
-      audio.pause();
+      audioRef.current.pause();
     } else {
-      audio.play();
+      audioRef.current
+        .play()
+        .catch((err) =>
+          console.log("Autoplay bloqueado en iOS hasta que se presione:", err)
+        );
     }
     setIsPlaying(!isPlaying);
   };
