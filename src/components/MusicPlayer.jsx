@@ -9,7 +9,7 @@ export default function MusicPlayer() {
   const togglePlay = () => {
     if (!audioRef.current) {
       audioRef.current = new Audio("/musica.mp3");
-      audioRef.current.loop = true; // opcional
+      audioRef.current.loop = true;
     }
 
     if (isPlaying) {
